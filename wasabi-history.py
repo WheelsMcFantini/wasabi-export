@@ -113,7 +113,7 @@ def main():
         trades = process_all_trade_history(trader_address)
         
         # Save to CSV
-        save_to_csv(trades, f"wasabi_trades{trader_address}.csv")
+        save_to_csv(trades, f"wasabi_trades-{trader_address}.csv")
         
     except Exception as e:
         print(f"Error: {e}")
